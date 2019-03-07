@@ -1,13 +1,11 @@
-const computeStats = require('./../services/compute-stats');
+const tweeterService = require('./../services/tweeter-service');
 
 module.exports = {
   method: 'get',
   path: '/report',
   handler: [
     async (ctx) => {
-      const stats = computeStats();
-
-      ctx.body = stats;
+      ctx.body = await tweeterService.generateStats();
       ctx.status = 200;
     },
   ],

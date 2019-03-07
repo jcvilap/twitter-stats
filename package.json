@@ -8,6 +8,11 @@
   "dependencies": {
     "koa": "^2.7.0",
     "koa-joi-router": "^5.2.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "twit": "^2.2.11"
+  },
+  "scripts": {
+    "start": "node lib"
   }
 }
